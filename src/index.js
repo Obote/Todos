@@ -11,6 +11,11 @@ const todoList = [{
   completed: true,
   index: 2,
 },
+{
+  description: 'serve food',
+  completed: true,
+  index: 2,
+},
 ];
 
 const addContent = () => {
