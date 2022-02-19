@@ -1,5 +1,7 @@
-const addTodo = document.getElementById('addTodo');
-const todos = document.getElementById('todos');
+import deleteIcon from './delete.png';
+
+const inputdesc = document.getElementById('input');
+const ul = document.getElementById('ul-list');
 export default class ToDoList {
   constructor(description, index, completed = false) {
     this.description = description;
@@ -10,9 +12,9 @@ export default class ToDoList {
   displaytdlist() {
     this.tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
-    if (todos.querySelectorAll('li')) {
-      Array.from(todos.querySelectorAll('li')).forEach((task) => {
-        todos.removeChild(task);
+    if (ul.querySelectorAll('li')) {
+      Array.from(ul.querySelectorAll('li')).forEach((task) => {
+        ul.removeChild(task);
       });
     }
     this.index = 0;
@@ -58,15 +60,15 @@ export default class ToDoList {
       li.appendChild(checkbox);
       li.appendChild(inputText);
       li.appendChild(delIcon);
-      todos.appendChild(li);
+      ul.appendChild(li);
     });
   }
 
   addTask() {
-    this.tasks.push(new ToDoList(this.description = addTodo.value));
+    this.tasks.push(new ToDoList(this.description = inputdesc.value));
     localStorage.setItem('tasks', JSON.stringify(this.tasks));
     this.displaytdlist();
-    addTodo.value = '';
+    inputdesc.value = '';
   }
 
   removeTask(n) {
