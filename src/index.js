@@ -6,8 +6,8 @@ const createEnterIcon = () => {
   const formContainer = document.querySelector('.input-container');
   const enIcon = new Image();
   enIcon.src = enterIcon;
-  enIcon.setAttribute('id', 'enterInput');
-  enIcon.classList = 'enterInput';
+  enIcon.setAttribute('id', 'enter-input');
+  enIcon.classList = 'enter-input';
   enIcon.setAttribute('alt', 'enter-icon');
   formContainer.appendChild(enIcon);
 };
@@ -16,8 +16,8 @@ createEnterIcon();
 
 const runClass = new ToDoList();
 runClass.displaytdlist();
-const btnTask = document.getElementById('enterInput');
-btnTask.addEventListener('submit', () => {
+const btnTask = document.getElementById('enter-input');
+btnTask.addEventListener('click', () => {
   runClass.addTask();
 });
 const enterTask = document.getElementById('input');

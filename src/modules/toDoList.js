@@ -49,8 +49,8 @@ export default class ToDoList {
       // Create Delete Button
       const delIcon = new Image();
       delIcon.src = deleteIcon;
-      delIcon.setAttribute('id', 'deleteTask');
-      delIcon.classList = 'deleteTask';
+      delIcon.setAttribute('id', 'delete-task');
+      delIcon.classList = 'delete-task';
       delIcon.setAttribute('alt', 'delete-icon');
       delIcon.addEventListener('click', () => {
         this.removeTask(task.index);

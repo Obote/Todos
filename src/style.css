@@ -6,8 +6,8 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 5px 5px 10px 1px rgb(138, 138, 138);
+  background-color: rgb(255 255 255);
+  box-shadow: 5px 5px 10px 1px rgb(138 138 138);
   margin: 48px 10%;
 }
 
@@ -51,14 +51,14 @@ body {
 
 .clear-btn {
   background-color: #f9f9f9;
-  color: rgb(65, 65, 65);
+  color: rgb(65 65 65);
   width: 100%;
   height: 3rem;
   border: none;
   cursor: pointer;
 }
 
-.enterInput {
+.enter-input {
   width: 24px;
   height: 24px;
   padding: 13px;
@@ -71,7 +71,7 @@ body {
   display: flex;
 }
 
-.deleteTask {
+.delete-task {
   width: 24px;
   height: 24px;
   padding: 13px;
