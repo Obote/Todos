@@ -17,7 +17,7 @@ createEnterIcon();
 const runClass = new ToDoList();
 runClass.displaytdlist();
 const btnTask = document.getElementById('enterInput');
-btnTask.addEventListener('click', () => {
+btnTask.addEventListener('submit', () => {
   runClass.addTask();
 });
 const enterTask = document.getElementById('input');
